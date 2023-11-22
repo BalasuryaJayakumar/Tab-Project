@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&family=Lobster&family=Nunito&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+
+img {
+  display: block;
+  /* max-width: 100%;
+  height: auto; */
+} 
+
+button, form, textarea {
+  font: inherit;
+}
+
+
+.nowrap {
+  white-space: nowrap;
+}
+
+.offscreen {
+  position: absolute;
+  left: -10000px;
+}
+
+html {
+  font-family: 'Nunito', sans-serif;
+  font-size: clamp(1rem, 2.2vh, 1.5rem);
+  color: #000;
+  background-color: rgb(210, 220, 228);
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+h1, h4, button {
+  text-transform: capitalize;
+  letter-spacing: 0.1em;
+}
+
+.header {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4rem;
+}
+
+.header_para {
+  color: #333;
+  padding: 0.5rem;
+}
+
+.main {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.main_img {
+  border-radius: 15px;
+  margin: 1.5rem;
+  width: 500px;
+}
+
+.article {
+  margin: 1rem;
+}
+
+.btn_container {
+  height: 50px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #bbbbbb;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+}
+
+.content {
+  background-color: whitesmoke;
+  padding: 1.25rem 1.75rem;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  width: 500px;
+  display: flex;
+  flex-flow: column nowrap;
+  /* gap: 0.5rem; */
+  display: none;
+}
+
+.content_para {
+  color: #333;
+  padding: 0.5rem 0;
+}
+
+.content_ul {
+  list-style-type: none;
+  font-weight: bolder;
+}
+
+.btn {
+  border: none;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  font-weight: bolder;
+}
+
+.btn:first-child {
+  border-top-left-radius: 8px;
+}
+
+.btn:last-child {
+  border-top-right-radius: 8px;
+}
+
+.btn.active {
+  background-color: #fff;
+}
+
+.content.active {
+  display: block;
+}
